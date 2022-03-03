@@ -15,8 +15,9 @@ In this task, I will demonstrate a basic Client-Server Relationship using mySQL 
 
 ![name](./images/comb-server.png)
 
-The next step is to remotely connect using the following commands
+These are the steps necessary to demonstrate a basic Client-server architecture using MYSQL. 
 1. The first step was to install mysql-client on the client server and mysql-client.
+
 2. After which I had to create a user on the mysql-server database using this code below.
 
 `CREATE USER 'me'@'mysql-client-IP' IDENTIFIED BY 'password'`.
@@ -38,5 +39,10 @@ In this file, the bind address had to be changed to "0.0.0.0"
 
     `sudo systemctl restart mysql`
 
+7. The final step is to enter the mysql interactive terminal and grant access to the user added "me"
+the IP-address of each EC2 was gotten after installing net-tools and typing ifconfig
+    `GRANT ALL PRIVILEGES ON *.* TO 'username'@'IP-address';`
+
+    `FLUSH PRIVILEGES;`
 
 
