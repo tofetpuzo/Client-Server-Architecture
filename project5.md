@@ -32,4 +32,11 @@ The next step is to remotely connect using the following commands
 
 `sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf`
 
+In this file, the bind address had to be changed to "0.0.0.0"
+
+6. After which the mysql service was restarted, using this code.
+
+    `sudo systemctl restart mysql`
+
+
 
