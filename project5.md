@@ -4,7 +4,7 @@ In this task, I will demonstrate a basic Client-Server Relationship using mySQL 
 
 1. The First step is to configure two Linux-based virtual servers(E2 instances in AWS).
 
-2. On both servers, I installed mySQL and named them mysql-Client and mysql-Server.
+2. On both servers, I installed mySQL and named them mysql-Client and mysql-Server. 
 
 3. The next step is to rename the two instances on the AWS instances here is the instances below.
 ![name](./images/name.png)
@@ -45,7 +45,9 @@ the IP-address of each EC2 was gotten after installing net-tools and typing ifco
 
     `FLUSH PRIVILEGES;`
 
-![name](./images/server-com.png)
+ The image bellow shows that the database was successfully logged into remotely from the client-server as show from the terminal   
 
+![name](./images/server-com.png)
+s
 
 
