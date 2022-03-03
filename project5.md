@@ -9,4 +9,9 @@ In this task, I will demonstrate a basic Client-Server Relationship using mySQL 
 3. The next step is to rename the two instances on the AWS instances here is the instances below.
 ![name](./images/name.png)
 
-4. 
+4. The two AWS instances were configured so that the hostname is configured using this code.
+
+`hostnamectl sethostname mysql-Client`
+
+![name](./images/comb-server.png)
+
