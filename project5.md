@@ -15,3 +15,4 @@ In this task, I will demonstrate a basic Client-Server Relationship using mySQL 
 
 ![name](./images/comb-server.png)
 
+The next step is to remotely connect using the following commands
