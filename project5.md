@@ -19,8 +19,17 @@ The next step is to remotely connect using the following commands
 1. The first step was to install mysql-client on the client server and mysql-client.
 2. After which I had to create a user on the mysql-server database using this code below.
 
-`CREATE USER 'me'@'myIP' IDENTIFIED BY 'password'`.
+`CREATE USER 'me'@'mysql-client-IP' IDENTIFIED BY 'password'`.
 
-3. The next step is to actually 
+
+3. I used the local IP address of the mysql-server to allow communication between the two EC2 instances. using this code but first step 4 had to be done.
 
 `mysql -h "IP-ADDRESS" -u "username" -p`
+
+4. The next step is to actually configure the inbound rules to communicate since both EC2 virtual servers are located in the same local virtual network, so they can communicate with each other using the same IP address. 
+
+5. The next step is to configure the mySQL server to allow connection from hosts, using this code.
+
+`sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf`
+
+
