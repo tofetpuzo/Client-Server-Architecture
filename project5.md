@@ -45,4 +45,7 @@ the IP-address of each EC2 was gotten after installing net-tools and typing ifco
 
     `FLUSH PRIVILEGES;`
 
+![name](./images/server-com.png)
+
+
 
