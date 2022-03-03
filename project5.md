@@ -16,3 +16,11 @@ In this task, I will demonstrate a basic Client-Server Relationship using mySQL 
 ![name](./images/comb-server.png)
 
 The next step is to remotely connect using the following commands
+1. The first step was to install mysql-client on the client server and mysql-client.
+2. After which I had to create a user on the mysql-server database using this code below.
+
+`CREATE USER 'me'@'myIP' IDENTIFIED BY 'password'`.
+
+3. The next step is to actually 
+
+`mysql -h "IP-ADDRESS" -u "username" -p`
